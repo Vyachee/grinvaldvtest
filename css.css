@@ -1,0 +1,99 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'osbold';
+	src: url("osbold.ttf");
+}
+
+
+@font-face {
+	font-family: 'osregular';
+	src: url("osregular.ttf");
+}
+
+@font-face {
+	font-family: 'oslight';
+	src: url("oslight.ttf");
+}
+
+.g-slider {
+	background-color: rgba(0, 0, 0, .05);
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.g-slider .col-left {
+	width: 35%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.g-slider .col-right {
+	width: 65%;
+	height: 100%;
+}
+
+.g-slider-title {
+	font-family: 'oslight';
+	font-size: 2.5em;
+	padding: 25px;
+}
+
+.g-slider-list {
+	padding: 25px;
+	padding-left: 50px;
+	font-size: 1.75em;
+}
+
+.g-slider-list li {
+	color: rgba(0, 0, 0, .4);
+	font-family: 'osregular';
+	list-style: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.g-slider-list li:hover {
+	padding-left: 15px;
+	color: rgba(0, 0, 0, .8)
+}
+
+li.g-list-item-active{
+	color: rgba(255, 255, 255, .8);
+	padding-left: 25px;
+}
+
+li.g-list-item-active:hover{
+	color: #fff;
+	padding-left: 25px;
+}
+
+.g-slides {
+	width: 100%;
+	height: 100%;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.g-all-slides {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.g-slide {
+	width: 100%;
+	height: 100%;
+}
+
+.g-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

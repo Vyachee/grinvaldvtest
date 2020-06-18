@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GButton</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <button class="btn" onclick="wow();">Изучить материал по Git</button>
+            <p class="text"></p>
+        </div>
+    </div>
+    <span>EasyGIT</span>
+    <script>
+        let isExist = false;
+        function wow() {
+            !isExist ? document.querySelector('p.text').innerHTML = 'Здесь могло бы произойти что-то'
+            : document.querySelector('p.text').innerHTML = '';
+            isExist = !isExist;
+        }
+    </script>
+</body>
+</html>

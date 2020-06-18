@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Новости</title>
+	<link rel="stylesheet" href="css.css">
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<div id="scene">
+		<div data-depth="0.4"><img src="bg.png" alt=""></div>
+	</div>
+	<div class="container">
+
+		<a href="/" class="toMain">На главную</a>
+
+		<div class="center">
+			<h1>Новости</h1>
+		</div>
+
+		<div class="articles">
+
+			<div class="article">
+				<a href="#">
+					<div class="preview">
+						<div class="bg">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Git_session.svg/1200px-Git_session.svg.png">
+						</div>
+						<div class="title">
+							<h2>Новость №1</h2>
+						</div>
+					</div>
+					<div class="description">
+						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пояс живет переулка вопроса всеми запятых. Приставка семь ее гор!</p>
+					</div>
+					<p class="more">Подробнее</p>
+				</a>
+			</div>	
+
+
+			<div class="article">
+				<a href="#">
+					<div class="preview">
+						<div class="bg">
+							<img src="https://tech.liga.net/images/general/2019/09/19/thumbnail-nv-20190919124228-6026.jpg?v=1568891612">
+						</div>
+						<div class="title">
+							<h2>Самый дорогой стартап, созданный украинцем, стоит $2,7 млрд. Его история</h2>
+						</div>
+					</div>
+					<div class="description">
+						<p>На днях стало известно, что стартап GitLab привлек $268 млн инвестиций и был оценен в $2,7 млрд. Это первый стартап с украинским основателем, который уже может попасть в ТОП-100 самых дорогих стартапов мира. </p>
+					</div>
+					<p class="more">Подробнее</p>
+				</a>
+			</div>	
+
+		</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+	</script>
+</body>
+</html>

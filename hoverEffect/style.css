@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.center {
+    text-align: center;
+    height: 10vh;
+}
+
+.logo {
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img{
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.cell {
+    height: 33.3333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, p, button {
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    padding: 10px;
+    background-color: #242424;
+    width: 100%;
+    position: relative;
+    top: -100%;
+    transition: 0.5s;
+}
+
+p {
+    position: relative;
+    bottom: -200%;
+    transition: 0.45s;
+    opacity: 0;
+}
+
+button {
+    padding: 10px 15px;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    background-color: #242424;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img-container:hover button {
+    opacity: 1;
+}
+
+.img-container:hover .mask {
+    background-color: rgba(242, 98, 72, 0.4);
+}
+
+.img-container:hover h2 {
+    top: 0;
+}
+
+.img-container:hover p {
+    bottom: 0;
+    opacity: 1; 
+}
+
+.img-container:hover img {
+    transform: scale(1.2);
+}
